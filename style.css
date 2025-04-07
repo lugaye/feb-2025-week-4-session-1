@@ -1,0 +1,21 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: brown;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: grey;
+    }
+
+    .container{
+        width: 100%;
+        background-color: lime;
+    }
+}

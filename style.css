@@ -20,12 +20,14 @@ img {
     }
 }
 
+/* Flexible Box Layout */
+
 .flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    height: 100vh;
+    height: 60vh;
     background-color: lightgreen;
 }
 
@@ -35,3 +37,19 @@ img {
     margin: 10px;
     flex: 1; /* This allows the items to grow and fill the container equally */
 }
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header'
+                         'menu main right'
+                         'footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.item1{grid-area: header; background-color: lightblue;}
+.item2{grid-area: menu; background-color: lightcoral;}
+.item3{grid-area: main; background-color: lightgreen;}
+.item4{grid-area: right; background-color: lightsalmon;}
+.item5{grid-area: footer; background-color: lightslategray;}
